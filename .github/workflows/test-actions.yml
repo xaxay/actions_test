@@ -1,6 +1,6 @@
 name: Test Custom Actions
 
-on: [push, pull_request]  # Define when the actions should run
+on: [push]
 
 jobs:
   test-action:
@@ -10,8 +10,8 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Use Custom Action from Action Library
-      uses: your-username/action_library/.github/actions/tag-new-version@main
+      uses: xaxay/action_library/.github/actions/tag-new-version@main
       with:
         some-input: value
       env:
-        GITHUB_TOKEN: ${{ secrets.REPO_SECRET }} # Use your secret here
+        GITHUB_TOKEN: ${{ secrets.REPO_SECRET }}
