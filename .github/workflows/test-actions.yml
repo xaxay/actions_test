@@ -9,9 +9,9 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Use Custom Action from Action Library
-      uses: xaxay/action_library/actions/tag-new-version@master
-      with:
-        some-input: value
-      env:
-        GITHUB_TOKEN: ${{ secrets.REPO_SECRET }}
+    # - name: Use Custom Action from Action Library
+    #   uses: xaxay/action_library/actions/tag-new-version@master
+    #   with:
+    #     some-input: value
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.REPO_SECRET }}
